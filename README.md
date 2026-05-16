@@ -20,3 +20,26 @@ int main(){
 			total = readingValue + total;
 		} 
 
+	average = total / NUM_READINGS ;
+		
+		//Incorporate evaluation logic directly
+		if (average < 100){
+			cout << "Experiment " << i << " average: ";
+			cout << average << " is below acceptable range\n"; }
+			
+		    else if (average <= 300){
+				cout << "Experiment " << i << " average: ";
+				cout << average << " is within acceptable range\n"; }
+				
+			else{
+				cout << "Experiment "<< i << " average: ";
+				cout << average << " is above acceptable range\n";
+			}
+		}
+
+			
+			
+		return 0;
+}
+ 
+ 
